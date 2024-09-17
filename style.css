@@ -1,0 +1,169 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    width: 100%;
+}
+.container
+{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.headercontainer
+{
+    margin: 2.8rem;
+}
+.headertitle
+{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight:700;
+    text-align: center;
+
+}
+.headerdesc
+{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+.maincon
+{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1 ,1fr);
+}
+@media (min-width:935px)
+{
+    .maincon{
+    grid-template-columns: repeat(2 ,1fr);
+    }
+    
+}
+@media (min-width:1380px)
+{
+    .maincon{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1870px)
+{
+    .maincon{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.cardcontainer
+{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(111, 109, 109);
+    border-radius: 5px;
+}
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+@media (min-width: 768px)
+{
+    .card_image_container
+    {
+        height: 12rem;
+    }
+}
+.cardimg 
+{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_title_container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.cardcontainer:hover .cardimg
+{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.cardtitle 
+{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgb(25, 23, 23);
+    margin-bottom: 0.3rem;
+}
+.classtitleanchor:hover .cardtitle{
+    color: rgb(67 , 67, 191);
+}
+.cardbody
+{
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+}
+.cardfootercontainer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: flex-end;
+
+}
+.authorcontainer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    /* border: 1px solid rgb(150, 147, 147); */
+    border-radius: 50%;
+    background-color: rgb(243, 226, 226);
+
+}
+.info
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.authorname
+{
+    color: rgb(38, 38, 149);
+}
+.authordate
+{
+    color: rgb(136, 126, 126);
+}
+.cardtag
+{
+    font-size: 0.79rem;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding :0.25rem 0.5rem;
+    color: grey;
+
+}
